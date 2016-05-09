@@ -1,0 +1,9 @@
+<launch>
+	<node pkg="image_transport" type="republish" name="image_decompresser" 
+		args="compressed in:=/camera/left/image_raw out:=/camera/left/image_raw" />	
+	</node>
+
+	<node pkg="image_transport" type="republish" name="right_image_decompresser" 
+		args="compressed in:=/camera/right/image_raw out:=/camera/right/image_raw" />	
+	</node>
+</launch>
