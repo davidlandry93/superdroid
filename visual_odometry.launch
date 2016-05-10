@@ -1,0 +1,35 @@
+<launch>
+ <param name="use_sim_time" type="bool" value="True"/>
+  <node name="republish_left" type="republish" pkg="image_transport" args="compressed in:=/camera/left/image_raw out:=/camera/left/image_raw_bag" />
+   <node name="republish_right" type="republish" pkg="image_transport" args="compressed in:=/camera/right/image_raw out:=/camera/right/image_raw_bag" /> 
+
+
+ <!-- Run the ROS package stereo_image_proc for image rectification -->
+   <group ns="/camera" >
+      <node pkg="nodelet" type="nodelet" name="stereo_nodelet"  args="manager"/>
+   
+      <node pkg="stereo_image_proc" type="stereo_image_proc" name="stereo_image_proc">
+         <remap from="left/image_raw"    to="left/image_raw_bag"/>
+         <remap from="left/camera_info"  to="left/camera_info"/>
+         <remap from="right/image_raw"   to="right/image_raw_bag"/>
+         <remap from="right/camera_info" to="right/camera_info"/>
+         <param name="disparity_range" value="0"/>
+	 <param name="speckle_size" value="1000"/>
+	 <param name="uniqueness_ratio" value="15"/>
+	 <param name="correlation_window_size" value="10"/>
+      </node>
+   </group>
+       
+  
+  <!-- Viso2 -->
+    <node pkg="viso2_ros" type="stereo_odometer" name="stereo_odometer" output="screen">
+      <remap from="stereo" to="/camera"/>
+      <remap from="image" to="/image_rect"/>
+      <remap from="stereo_odometer/odometry" to="/odometry" />
+
+      <param name="base_link_frame_id" type="string" value="base_footprint"/>
+      <param name="odom_frame_id" type="string" value="odom"/>
+      <param name="ref_frame_change_method" value="1"/>
+      <param name="queue_size" value="30"/>
+   </node>
+</launch>
