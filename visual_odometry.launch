@@ -25,11 +25,12 @@
     <node pkg="viso2_ros" type="stereo_odometer" name="stereo_odometer" output="screen">
       <remap from="stereo" to="/camera"/>
       <remap from="image" to="/image_rect"/>
-      <remap from="stereo_odometer/odometry" to="/odometry" />
+      <remap from="stereo_odometer/odometry" to="/camera/odometry" />
 
       <param name="base_link_frame_id" type="string" value="base_footprint"/>
       <param name="odom_frame_id" type="string" value="odom"/>
       <param name="ref_frame_change_method" value="1"/>
       <param name="queue_size" value="30"/>
+      <param name="publish_tf" value="false" />
    </node>
 </launch>
