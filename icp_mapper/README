@@ -1,0 +1,4 @@
+to launch, you have to change to ROS_HOME environment variable so that the yaml configuration files can be read.
+
+
+  $ ROS_HOME=`pwd` roslaunch icp_mapper.launch

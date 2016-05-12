@@ -1,0 +1,95 @@
+[rosmaster.main][INFO] 2016-05-11 11:06:02,945: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2016-05-11 11:06:02,945: Starting ROS Master Node
+[xmlrpc][INFO] 2016-05-11 11:06:02,946: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2016-05-11 11:06:02,947: Started XML-RPC server [http://w530:11311/]
+[rosmaster.master][INFO] 2016-05-11 11:06:02,947: Master initialized: port[11311], uri[http://w530:11311/]
+[xmlrpc][INFO] 2016-05-11 11:06:02,947: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2016-05-11 11:06:02,992: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2016-05-11 11:06:02,994: +PARAM [/roslaunch/uris/host_w530__41474] by /roslaunch
+[rosmaster.master][INFO] 2016-05-11 11:06:03,076: +PARAM [/mapper/mapPostFiltersConfig] by /roslaunch
+[rosmaster.master][INFO] 2016-05-11 11:06:03,076: +PARAM [/mapper/subscribe_scan] by /roslaunch
+[rosmaster.master][INFO] 2016-05-11 11:06:03,077: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2016-05-11 11:06:03,077: +PARAM [/mapper/minOverlap] by /roslaunch
+[rosmaster.master][INFO] 2016-05-11 11:06:03,077: +PARAM [/mapper/minReadingPointCount] by /roslaunch
+[rosmaster.master][INFO] 2016-05-11 11:06:03,077: +PARAM [/mapper/inputFiltersConfig] by /roslaunch
+[rosmaster.master][INFO] 2016-05-11 11:06:03,077: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2016-05-11 11:06:03,077: +PARAM [/mapper/map_frame] by /roslaunch
+[rosmaster.master][INFO] 2016-05-11 11:06:03,078: +PARAM [/mapper/odom_frame] by /roslaunch
+[rosmaster.master][INFO] 2016-05-11 11:06:03,078: +PARAM [/mapper/icpConfig] by /roslaunch
+[rosmaster.master][INFO] 2016-05-11 11:06:03,078: +PARAM [/mapper/subscribe_cloud] by /roslaunch
+[rosmaster.master][INFO] 2016-05-11 11:06:03,078: +PARAM [/mapper/maxOverlapToMerge,] by /roslaunch
+[rosmaster.master][INFO] 2016-05-11 11:06:03,078: +PARAM [/mapper/minMapPointCount] by /roslaunch
+[rosmaster.master][INFO] 2016-05-11 11:06:03,078: +PARAM [/mapper/useROSLogger] by /roslaunch
+[rosmaster.master][INFO] 2016-05-11 11:06:03,079: +PARAM [/mapper/useConstMotionModel] by /roslaunch
+[rosmaster.master][INFO] 2016-05-11 11:06:03,081: +SERVICE [/rosout/get_loggers] /rosout http://w530:44748/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,082: +SERVICE [/rosout/set_logger_level] /rosout http://w530:44748/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,084: +PUB [/rosout_agg] /rosout http://w530:44748/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,088: +SUB [/rosout] /rosout http://w530:44748/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,103: +PUB [/rosout] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,105: +SERVICE [/mapper/get_loggers] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,106: +SERVICE [/mapper/set_logger_level] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,118: +SUB [/tf] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,120: +SUB [/tf_static] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,121: +PUB [/tf] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,128: +SUB [/velodyne_points] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,128: +PUB [/point_map] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,129: +PUB [/outliers] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,129: +PUB [/icp_odom] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,130: +PUB [/icp_error_odom] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,130: +SERVICE [/dynamic_point_map] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,131: +SERVICE [/mapper/save_map] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,131: +SERVICE [/mapper/load_map] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,132: +SERVICE [/mapper/reset] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,132: +SERVICE [/mapper/correct_pose] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,133: +SERVICE [/mapper/set_mode] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,133: +SERVICE [/mapper/get_mode] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,134: +SERVICE [/mapper/get_bounded_map] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,146: publisherUpdate[/rosout] -> http://w530:44748/
+[rosmaster.master][INFO] 2016-05-11 11:06:03,146: publisherUpdate[/tf] -> http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:05,153: -PUB [/rosout] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:05,154: -PUB [/tf] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:05,155: -PUB [/point_map] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:05,156: -PUB [/outliers] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:05,157: -PUB [/icp_odom] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:05,158: -PUB [/icp_error_odom] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:05,159: -SUB [/tf] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:05,160: -SUB [/tf_static] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:05,161: -SUB [/velodyne_points] /mapper http://w530:33576/
+[rosmaster.master][INFO] 2016-05-11 11:06:05,162: -SERVICE [/mapper/get_loggers] /mapper rosrpc://w530:55408
+[rosmaster.master][INFO] 2016-05-11 11:06:05,163: -SERVICE [/mapper/set_logger_level] /mapper rosrpc://w530:55408
+[rosmaster.master][INFO] 2016-05-11 11:06:05,164: -SERVICE [/dynamic_point_map] /mapper rosrpc://w530:55408
+[rosmaster.master][INFO] 2016-05-11 11:06:05,165: -SERVICE [/mapper/save_map] /mapper rosrpc://w530:55408
+[rosmaster.master][INFO] 2016-05-11 11:06:05,166: -SERVICE [/mapper/load_map] /mapper rosrpc://w530:55408
+[rosmaster.master][INFO] 2016-05-11 11:06:05,167: -SERVICE [/mapper/reset] /mapper rosrpc://w530:55408
+[rosmaster.master][INFO] 2016-05-11 11:06:05,167: -SERVICE [/mapper/correct_pose] /mapper rosrpc://w530:55408
+[rosmaster.master][INFO] 2016-05-11 11:06:05,168: -SERVICE [/mapper/set_mode] /mapper rosrpc://w530:55408
+[rosmaster.master][INFO] 2016-05-11 11:06:05,169: -SERVICE [/mapper/get_mode] /mapper rosrpc://w530:55408
+[rosmaster.master][INFO] 2016-05-11 11:06:05,170: -SERVICE [/mapper/get_bounded_map] /mapper rosrpc://w530:55408
+[rosmaster.master][INFO] 2016-05-11 11:06:05,251: publisherUpdate[/rosout] -> http://w530:44748/
+[rosmaster.master][INFO] 2016-05-11 11:06:05,251: publisherUpdate[/tf] -> http://w530:33576/
+[rosmaster.threadpool][ERROR] 2016-05-11 11:06:05,252: Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rosmaster/master_api.py", line 208, in publisher_update_task
+    xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1233, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1587, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1273, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1306, in single_request
+    return self.parse_response(response)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1482, in parse_response
+    return u.close()
+  File "/usr/lib/python2.7/xmlrpclib.py", line 794, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2016-05-11 11:06:05,552: -PUB [/rosout_agg] /rosout http://w530:44748/
+[rosmaster.master][INFO] 2016-05-11 11:06:05,554: -SUB [/rosout] /rosout http://w530:44748/
+[rosmaster.master][INFO] 2016-05-11 11:06:05,554: -SERVICE [/rosout/get_loggers] /rosout rosrpc://w530:54876
+[rosmaster.master][INFO] 2016-05-11 11:06:05,555: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://w530:54876
+[rosmaster.main][INFO] 2016-05-11 11:06:05,578: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2016-05-11 11:06:05,578: stopping master...
+[rospy.core][INFO] 2016-05-11 11:06:05,578: signal_shutdown [atexit]

@@ -1,0 +1,4 @@
+
+
+1462957563.084222112  Node Startup
+1462957563.125997830 INFO [/home/david/envs/catkin_ws/src/libpointmatcher_ros/include/pointmatcher_ros/get_params_from_server.h:18(string = std::basic_string<char>]) [topics: /rosout, /tf] Found parameter: subscribe_cloud, value: 1

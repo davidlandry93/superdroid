@@ -2,10 +2,10 @@
 	<node name="mapper" type="mapper" pkg="ethzasl_icp_mapper" output="screen">
 		<remap from="/cloud_in" to="/velodyne_points" />
 		<param name="subscribe_scan" value="false"/>
-    <param name="subscribe_cloud" value="true"/>
-		<param name="icpConfig" value="$(find ethzasl_icp_mapper)/launch/smartter/icp.yaml" />
-		<param name="inputFiltersConfig" value="$(find ethzasl_icp_mapper)/launch/smartter/input_filters.yaml" />
-		<param name="mapPostFiltersConfig" value="$(find ethzasl_icp_mapper)/launch/smartter/map_post_filters.yaml" />
+    		<param name="subscribe_cloud" value="true"/>
+		<param name="icpConfig" value="icp.yaml" />
+		<param name="inputFiltersConfig" value="input_filters.yaml" />
+		<param name="mapPostFiltersConfig" value="map_post_filters.yaml" />
 		<param name="odom_frame" value="/base_link" />
 		<param name="map_frame" value="/map" />
 		<param name="useROSLogger" value="true" />
