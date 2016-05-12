@@ -1,5 +1,5 @@
 <launch>
   <include file="visual_odometry.launch" />
-  <include file="icp_mapper.launch" />
+ <!-- <include file="icp_mapper.launch" /> -->
   <include file="robot_localization.launch" />
 </launch>

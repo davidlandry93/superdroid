@@ -31,6 +31,6 @@
       <param name="odom_frame_id" type="string" value="odom"/>
       <param name="ref_frame_change_method" value="1"/>
       <param name="queue_size" value="30"/>
-      <param name="publish_tf" value="false" />
+      <param name="publish_tf" value="true" />
    </node>
 </launch>
