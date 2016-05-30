@@ -25,8 +25,9 @@
   <!-- declare arguments with default values -->
   <arg name="pcap" default="" />
   <arg name="calibration" default="$(find velodyne_pointcloud)/params/VLP16db.yaml"/>
-  <arg name="min_range" default="0.5" />
-  <arg name="max_range" default="6.0" />
+  <arg name="min_range" default="0.3" />
+  <arg name="max_range" default="5
+.0" />
 
   <!-- start nodelet manager and driver nodelets -->
   <include file="$(find velodyne_driver)/launch/nodelet_manager.launch">
@@ -40,8 +41,8 @@
     <arg name="min_range" value="$(arg min_range)"/>
     <arg name="max_range" value="$(arg max_range)"/>
   </include>
-<!--<group ns="camera">
-    <node pkg="nodelet" type="nodelet" name="image_proc_debayer_left"
+<group ns="camera">
+<!-- <node pkg="nodelet" type="nodelet" name="image_proc_debayer_left"
         args="load image_proc/debayer bumblebee_nodelet_manager">
       <remap from="image_raw" to="left/image_raw"/>
       <remap from="image_mono" to="left/image_mono"/>
@@ -52,7 +53,7 @@
       <remap from="image_raw" to="right/image_raw"/>
       <remap from="image_mono" to="right/image_mono"/>
       <remap from="image_color" to="right/image_color"/>
-  </node>
+  </node>-->
 
     <node pkg="nodelet" type="nodelet" name="stereo_nodelet" args="manager"/>
     <node pkg="stereo_image_proc" type="stereo_image_proc" name="stereo_image_proc">
@@ -61,7 +62,7 @@
         <param name="uniqueness_ratio" value="15"/>
         <param name="correlation_window_size" value="10"/>
     </node> 
-  </group>-->
+  </group>
   <include file="$(find mavros)/launch/apm.launch"/>
 </launch>
 
