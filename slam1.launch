@@ -1,0 +1,6 @@
+
+<launch>
+  <include file="icp_mapper/icp_mapper.launch"/>
+  <include file="rtabmap_icp.launch"/>
+  <include file="voxel_filter.launch"/>
+</launch>
